@@ -7,7 +7,7 @@ app.get("/", async (req,res)=>{
     res.send(response)
 })
 
-app.listen(3000, (err)=>{
+app.listen(process.env.PORT, (err)=>{
     if(err)throw err;
     console.log('listening on port 3000')
 })
